@@ -1,0 +1,23 @@
+{
+    "name": "animalniax/eventbundle",
+    "description": "This bundle provides classes and doctrine mappings for Animalniax Event Manager",
+    "type": "symfony-bundle",
+    "authors": [
+        {
+            "name":"pcrupert",
+            "email": "ifernandezbocos@gmail.com"
+        }
+    ],
+    "keywords":[
+        "animalniax", "event", "symfony", "bundle"
+    ],
+    "require":{
+    	"php": ">=5.4.0",
+        "symfony/framework-bundle": "~2.8.2",
+    },
+    "autoload":{
+        "psr-4":{
+            "Animalniax\\EventBundle\\":""
+        }
+    }
+}
