@@ -48,6 +48,11 @@ class Event
     protected $codeType;
 
     /**
+     * @ORM\Column(type="string", name="event_type", nullable=false)
+     */
+    protected $type;
+
+    /**
      * Get the value of Id
      *
      * @return mixed
@@ -224,4 +229,29 @@ class Event
 
         return $this;
     }
+
+    /**
+     * Get the value of Type
+     *
+     * @return mixed
+     */
+    public function getType()
+    {
+        return $this->type;
+    }
+
+    /**
+     * Set the value of Type
+     *
+     * @param mixed type
+     *
+     * @return self
+     */
+    public function setType($type)
+    {
+        $this->type = $type;
+
+        return $this;
+    }
+
 }
